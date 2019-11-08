@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Student {
+    string DNI = 1;
+    string firstname = 2;
+    string lastname = 3;
+
+    enum Grade {
+       UNKNOWN = 0;
+       PASS = 1;
+       FAIL = 2;
+    }
+
+    Grade grade = 4;
+}
